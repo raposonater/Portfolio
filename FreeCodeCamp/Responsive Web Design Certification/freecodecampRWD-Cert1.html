@@ -1,0 +1,81 @@
+!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+  <h1 id='title'>Survey Form</h1>
+  <p id='description'>This is a survey form site made for freecodecamp.org</p>
+  <form id='survey-form'>
+    <fieldset>
+      <label for='name' id="name-label"> Enter your name: 
+        <input id='name' name='name' type='text' required placeholder="e.g. John Smith"></input>
+      </label>
+      <label for='email' id="email-label"> Enter your email: 
+        <input id='email' name='email' type='email' required placeholder='e.g. JSmith@yahoo.com'></input>
+      </label>
+      <label for='number' id="number-label"> Enter your number: 
+        <input id='number' name='number' type='number' min=1 max=99 placeholder='e.g. 69'></input>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id='dropdown-label' for='dropdown'>Please select your type
+        <select id='dropdown'>
+          <option value="">(select one)</option>
+            <option value="1">Personal</option>
+            <option value="2">Business</option>
+            <option value="3">Pleasure</option>
+            <option value="4">Other</option>
+        </select>
+      </label>
+      How are you feeling today?
+      <label> Garbage
+        <input type=radio id='radio' name='feelings' value='10'>
+        </input>
+      </label>
+      <label> Meh
+        <input type=radio id='radio' name='feelings' value='11'>
+        </input>
+      </label>
+      <label> Amazing
+        <input type=radio id='radio' name='feelings' value='12'>
+        </input>
+      </label>
+    </fieldset>
+    <fieldset>
+      What flavours of ice cream do you like?
+      <label> Vanilla
+        <input type=checkbox id='Checkbox' name='icecream' value="1">
+        </input>
+      </label>
+      <label> Chocolate
+        <input type=checkbox id='Checkbox' name='icecream' value="2">
+        </input>
+      </label>
+      <label> Strawberry
+        <input type=checkbox id='Checkbox' name='icecream' value="3">
+        </input>
+      </label>
+      <label> Mint Chip
+        <input type=checkbox id='Checkbox' name='icecream' value="4">
+        </input>
+      </label>
+      <label> Other
+        <input type=checkbox id='Checkbox' name='icecream' value="5">
+        </input>
+      </label>
+      <label> None :(
+        <input type=checkbox id='Checkbox' name='icecream' value="6">
+        </input>
+      </label>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Tell us what you think we could improve!"></textarea>
+    </fieldset>
+    <input type='submit' value="Submit" id='submit'
+  </form>
+</body> 
+
+</html>
